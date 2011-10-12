@@ -15,7 +15,7 @@
                 "--delete",
                 "--force",
                 "--executability",
-                "--exclude-from=.rsync-exclude",
+                "--exclude-from=${project_path}/.rsync-exclude",
                 "--delete-excluded",
                 "${project_path}/",
                 "dev@dashrocket:/home/dev/env/Starter"
