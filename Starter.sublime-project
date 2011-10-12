@@ -9,7 +9,17 @@
     [
         {
             "name": "Rsync to dashrocket",
-            "cmd": ["rsync", "-rav", "--delete", "--force", "${project_path}/", "dev@dashrocket:/home/dev/env/Starter"]
+            "cmd": [
+                "rsync",
+                "-rav",
+                "--delete",
+                "--force",
+                "--executability",
+                "--exclude-from=.rsync-exclude",
+                "--delete-excluded",
+                "${project_path}/",
+                "dev@dashrocket:/home/dev/env/Starter"
+            ]
         }
     ]
 }
