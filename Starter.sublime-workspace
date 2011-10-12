@@ -1,0 +1,394 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"for",
+				"for: for (…) {…} (Improved Native For-Loop)"
+			],
+			[
+				"h",
+				"headers"
+			],
+			[
+				"to",
+				"to_say (local, instance)"
+			],
+			[
+				"B",
+				"B64TOKEN"
+			],
+			[
+				"try",
+				"try: Try/Except"
+			],
+			[
+				"n",
+				"nick (local, instance)"
+			],
+			[
+				"demo",
+				"demons (global, instance)"
+			],
+			[
+				"pi",
+				"ping_callback"
+			],
+			[
+				"Imp",
+				"ImportError (builtin, class)"
+			],
+			[
+				"fo",
+				"folder (local, instance)"
+			],
+			[
+				"Impo",
+				"ImportError (builtin, class)"
+			],
+			[
+				"sp",
+				"split"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 175.0,
+		"selected_items":
+		[
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"gitsta",
+				"Git: Status"
+			],
+			[
+				"git",
+				"Git: Commit"
+			],
+			[
+				"gitad",
+				"Git: Add Current File"
+			],
+			[
+				"rope",
+				"Rope: New Project"
+			],
+			[
+				"align",
+				"Preferences: Alignment Key Bindings – Default"
+			],
+			[
+				"alig",
+				"Preferences: Alignment Key Bindings – User"
+			],
+			[
+				"xml",
+				"Set Syntax: XML"
+			],
+			[
+				"scope",
+				"Scope: Show on move"
+			],
+			[
+				"ruby",
+				"Set Syntax: Ruby"
+			],
+			[
+				"sql",
+				"Set Syntax: SQL"
+			],
+			[
+				"markdo",
+				"Set Syntax: Markdown"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"space",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"spa",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Upgrade Package"
+			]
+		],
+		"width": 579.0
+	},
+	"console":
+	{
+		"height": 230.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": true,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/nilcolor/Projects/no.mad/.git/COMMIT_EDITMSG",
+		"/Users/nilcolor/Projects/dotfiles/.git/COMMIT_EDITMSG",
+		"/Users/nilcolor/Projects/no.mad/src/plugin_loader.py",
+		"/Users/nilcolor/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/nilcolor/Library/Application Support/Sublime Text 2/Packages/User/Global.sublime-settings",
+		"/Users/nilcolor/Library/Application Support/Sublime Text 2/Packages/User/Base File.sublime-settings",
+		"/Users/nilcolor/Projects/no.mad.node/test.js",
+		"/Users/nilcolor/Projects/no.mad/src/plugins/ping/.placeholder",
+		"/Users/nilcolor/Projects/no.mad/src/plugins/hello_world/__init__.py",
+		"/Users/nilcolor/Projects/no.mad/src/test-live-stream.py",
+		"/Users/nilcolor/Projects/no.mad/.gitignore",
+		"/Users/nilcolor/Projects/no.mad/src/plugins/__init__.py",
+		"/Users/nilcolor/Projects/no.mad/plugins/__init__.py",
+		"/Users/nilcolor/Projects/no.mad/src/__init__.py",
+		"/Users/nilcolor/Projects/no.mad/test-live-stream.py",
+		"/Users/nilcolor/Projects/no.mad/.ropeproject/config.py",
+		"/Users/nilcolor/Projects/no.mad/README.md",
+		"/Users/nilcolor/Projects/cloudapp/src/cloudapp/cloudapp/cloud.py",
+		"/Users/nilcolor/.tmux.conf",
+		"/Users/nilcolor/.profile",
+		"/Users/nilcolor/Library/Application Support/Sublime Text 2/Packages/Alignment/Default (OSX).sublime-keymap",
+		"/Users/nilcolor/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/nilcolor/Library/LaunchAgents/com.nilcolor.OmniFocus.keepOpen.plist",
+		"/Users/nilcolor/ubuntu-home/tornado-mongo-tests/foo",
+		"/Users/nilcolor/ubuntu-home/webpy-expo/code.py",
+		"/Users/nilcolor/Library/Application Support/Sublime Text 2/Packages/Default/Base File.sublime-settings",
+		"/Users/nilcolor/Library/Application Support/Sublime Text 2/Packages/Default/Global.sublime-settings",
+		"/Users/nilcolor/Projects/nilcolor.com/source/_posts/2007-12-11-code-folding-textmate.markdown",
+		"/Users/nilcolor/Projects/exitwp/wordpress-xml/wp-xml-import.rb",
+		"/Users/nilcolor/Library/Application Support/Sublime Text 2/Packages/User/Markdown.sublime-settings",
+		"/Users/nilcolor/Library/Application Support/Sublime Text 2/Packages/User/Python.sublime-settings",
+		"/Users/nilcolor/ubuntu-home/webpy-expo/web.py-0.36/web/application.py",
+		"/Users/nilcolor/ubuntu-home/webpy-expo/web.py-0.36/web/wsgiserver/__init__.py",
+		"/Users/nilcolor/ubuntu-home/webpy-expo/web/wsgiserver/__init__.py",
+		"/Users/nilcolor/ubuntu-home/webpy-expo/web/application.py",
+		"/Users/nilcolor/ubuntu-home/webpy-expo/web/utils.py",
+		"/Users/nilcolor/ubuntu-home/webpy-expo/web.py-0.36/web/template.py",
+		"/Users/nilcolor/ubuntu-home/webpy-expo/web.py-0.36/web/utils.py",
+		"/Users/nilcolor/Library/Application Support/Sublime Text 2/Packages/Alignment/Base File.sublime-settings",
+		"/Users/nilcolor/Projects/nilcolor.com/source/_includes/custom/navigation.html",
+		"/Users/nilcolor/Projects/nilcolor.com/source/_posts/2011-09-14-explain-to-me-what-javascript-is.markdown",
+		"/Users/nilcolor/Library/Application Support/Sublime Text 2/Packages/User/JSON.sublime-settings",
+		"/Users/nilcolor/Projects/exitwp/config.yaml",
+		"/Users/nilcolor/Library/Application Support/Sublime Text 2/Packages/User/Color Scheme/Espresso Soda.tmTheme",
+		"/Users/nilcolor/Library/Application Support/Sublime Text 2/Packages/Theme - Soda/Soda Light.sublime-theme",
+		"/Users/nilcolor/Library/Application Support/Sublime Text 2/Packages/SublimeText/Default.sublime-commands",
+		"/Users/nilcolor/Library/Application Support/Sublime Text 2/Packages/SublimeText/Default (OSX).sublime-keymap",
+		"/Users/nilcolor/Library/Application Support/Sublime Text 2/Packages/SublimeText/Scope Commands.py",
+		"/Users/nilcolor/Library/Application Support/Sublime Text 2/Packages/Sublime Helper/Scope Commands.py",
+		"/Users/nilcolor/Library/Application Support/Sublime Text 2/Packages/User/Base File (OSX).sublime-settings",
+		"/Users/nilcolor/Downloads/SynthesizeSingleton.h",
+		"/Users/nilcolor/Downloads/PasswordManager/Classes/UYLPasswordManager.h",
+		"/Users/nilcolor/Downloads/PasswordManager/Classes/UYLPasswordManager.m"
+	],
+	"find":
+	{
+		"height": 33.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"include_history":
+		[
+		],
+		"location_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"re.",
+			"module",
+			"+t\"",
+			"ctrl+t",
+			"shift+t",
+			"ctrl+shift+t",
+			"logging",
+			"print",
+			"definition",
+			"definitions",
+			"glob.",
+			"glob",
+			"os.",
+			"false",
+			"neighbor",
+			"highlight",
+			"Build ",
+			"highlight_modified_tabs",
+			"/\\",
+			"{{",
+			"pdb",
+			"_cleanup",
+			"def load",
+			"delete",
+			"wsgifunc",
+			"def run",
+			"safestr",
+			"SystemExit",
+			"builtins",
+			"line",
+			"goto",
+			"tag",
+			"keys",
+			"	{ \"keys\": [\"super+i\"], \"command\": \"show_panel\", \"args\": {\"panel\": \"incremental_find\", \"reverse\":false} },\n	{ \"keys\": [\"super+shift+i\"], \"command\": \"show_panel\", \"args\": {\"panel\": \"incremental_find\", \"reverse\":true} },\n	{ \"keys\": [\"super+f\"], \"command\": \"show_panel\", \"args\": {\"panel\": \"find\"} },\n	{ \"keys\": [\"super+alt+f\"], \"command\": \"show_panel\", \"args\": {\"panel\": \"replace\"} },\n	{ \"keys\": [\"super+g\"], \"command\": \"find_next\" },\n	{ \"keys\": [\"super+shift+g\"], \"command\": \"find_prev\" },\n	{ \"keys\": [\"super+e\"], \"command\": \"slurp_find_string\" },\n	{ \"keys\": [\"super+shift+e\"], \"command\": \"slurp_replace_string\" },\n",
+			"	{ \"keys\": [\"super+p\"], \"command\": \"show_overlay\", \"args\": {\"overlay\": \"goto\"} },\n	{ \"keys\": [\"super+shift+p\"], \"command\": \"show_overlay\", \"args\": {\"overlay\": \"command_palette\"} },\n	{ \"keys\": [\"super+ctrl+p\"], \"command\": \"prompt_select_project\" },\n	{ \"keys\": [\"super+t\"], \"command\": \"show_overlay\", \"args\": {\"overlay\": \"goto\", \"show_files\": true} },\n	{ \"keys\": [\"",
+			"	{ \"keys\": [\"super+p\"], \"command\": \"show_overlay\", \"args\": {\"overlay\": \"goto\"} },\n",
+			"	{ \"keys\": [\"super+t\"], \"command\": \"show_overlay\", \"args\": {\"overlay\": \"goto\", \"show_files\": true} },\n",
+			"	{ \"keys\": [\"super+p\"], \"command\": \"show_overlay\", \"args\": {\"overlay\": \"goto\"} },\n",
+			"	{ \"keys\": [\"super+t\"], \"command\": \"show_overlay\", \"args\": {\"overlay\": \"goto\", \"show_files\": true} },\n",
+			"	{ \"keys\": [\"super+p\"], \"command\": \"show_overlay\", \"args\": {\"overlay\": \"goto\"} },\n",
+			"\"color\"",
+			"{\"available\"",
+			"background",
+			"highlight",
+			"false,",
+			"false",
+			"match",
+			"highlite_line",
+			"u0418",
+			"{\"meta",
+			"name_en",
+			"keychainIdentifier",
+			"createKeychainValue",
+			"registerKey"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"stream",
+				"vendor/pyfire/pyfire/stream.py"
+			],
+			[
+				"20071211",
+				"source/_posts/2007-12-11-code-folding-textmate.markdown"
+			],
+			[
+				"scop",
+				"/Users/nilcolor/Library/Application Support/Sublime Text 2/Packages/Sublime Helper/Scope Commands.py"
+			],
+			[
+				"subli",
+				"/Users/nilcolor/Library/Application Support/Sublime Text 2/Packages/User/Global.sublime-settings"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 252.0,
+	"status_bar_visible": true
+}
