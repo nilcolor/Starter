@@ -10,10 +10,16 @@ You can read it ofcourse, if you wish...
 What's here right now?
 ----------------------
 
-- Very simple resourse tree (check resources.py).  
+- Very simple resource tree (check resources.py).  
 - More than useless two view callables which responds to `GET:/foo/bar` and `POST:/foo/bar`
 
 Thats all for now. Infant, yeah...
+
+What's next?
+------------
+
+- Security based on resource tree
+- some real DB works
 
 
 [pyramid]: https://www.pylonsproject.org/
