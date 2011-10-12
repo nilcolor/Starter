@@ -1,14 +1,9 @@
 # -*- coding: utf-8 -*-
-################################################################################
-# Next code goes to the resources module
-################################################################################
+from __future__ import division, absolute_import
+
 class Root(dict):
     __name__ = None
     __parent__ = None
-
-
-class FakeResource(dict):
-    pass
 
 
 class BaseResource(object):
@@ -36,9 +31,4 @@ class Bar(BaseResource):
 def root_factory(request):
     root = Root()
     root['foo'] = Foo(name='foo', parent=root, request=request)
-    # root = FakeResource({
-    #     'foo': FakeResource({
-    #         'bar': FakeResource({})
-    #     })
-    # })
     return root
