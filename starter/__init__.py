@@ -5,7 +5,8 @@ from pyramid.config import Configurator
 from starter.resources import root_factory
 
 from pyramid.events import subscriber
-from pyramid.events import NewRequest
+from pyramid.events import NewRequest, ContextFound
+from pyramid.httpexceptions import HTTPUnauthorized, HTTPForbidden
 
 def main(global_config, **settings):
     """ This function returns a Pyramid WSGI application.
@@ -34,3 +35,17 @@ def cleanup_callback(request):
 @subscriber(NewRequest)
 def add_cleanup_callback(event):
     event.request.add_finished_callback(cleanup_callback)
+
+# will be called when context is found (in resource tree)
+@subscriber(ContextFound)
+def csrf_validation_event(event):
+    request = event.request
+    # user = getattr(request, 'user', None)
+    # csrf = request.params.get('csrf_token')
+    # if (request.method == 'POST' or request.is_xhr) and \
+    #     (user and user.is_authenticated()) and \
+    #     (csrf != unicode(request.session.get_csrf_token())):
+    # # summary - you can check something and pass-through request or
+    # # raise HTTP error here.
+    if request.cookies.get('sid', None) != '1234567890':
+        raise HTTPForbidden
