@@ -1,0 +1,6 @@
+REMOTE="dashrocket"
+REMOTE_PATH="/home/dev/env"
+REMOTE_USER="dev"
+# EXCLUDES=""
+# UPDATE_REMOTE=false
+# DELETE_EXCLUDED=true

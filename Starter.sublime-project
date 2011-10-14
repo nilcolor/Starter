@@ -4,22 +4,26 @@
 		{
 			"path": "/Users/nilcolor/Projects/Pyramid/Starter"
 		}
-	],
-    "build_systems":
+	]
+    ,"build_systems":
     [
         {
-            "name": "Rsync to dashrocket",
-            "cmd": [
-                "rsync",
-                "-rav",
-                "--delete",
-                "--force",
-                "--executability",
-                "--exclude-from=${project_path}/.rsync-exclude",
-                "--delete-excluded",
-                "${project_path}/",
-                "dev@dashrocket:/home/dev/env/Starter"
-            ]
+            "name": "Deploy",
+            "cmd": "deploy"
         }
+        // {
+        //     "name": "Rsync to dashrocket",
+        //     "cmd": [
+        //         "rsync",
+        //         "-rav",
+        //         "--delete",
+        //         "--force",
+        //         "--executability",
+        //         "--exclude-from=${project_path}/.rsync-exclude",
+        //         "--delete-excluded",
+        //         "${project_path}/",
+        //         "dev@dashrocket:/home/dev/env/Starter"
+        //     ]
+        // }
     ]
 }
