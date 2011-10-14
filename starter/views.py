@@ -35,5 +35,9 @@ class FuckyViewSecond(object):
     def fucky(self):
         return Response('POST:fucky view second', status="201")
 
+    @view_config(context="starter.resources.Go")
+    def go(self):
+        return Response('Go view')
+
 def my_view(request):
     return {'project':'Starter 0.0'}

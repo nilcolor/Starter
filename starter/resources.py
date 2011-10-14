@@ -1,33 +1,38 @@
 # -*- coding: utf-8 -*-
 from __future__ import division, absolute_import
+from .base_resource import Root, BaseResource
 
-class Root(dict):
-    __name__ = None
-    __parent__ = None
-
-
-class BaseResource(object):
-    __name__ = None
-    __parent__ = None
-    request = None
-
-    def __init__(self, name=None, parent=None, request=None):
-        self.__name__ = name
-        self.__parent__ = parent
-        self.request = request
-
-
+################################################################################
+# Root resource level
 class Foo(BaseResource):
-    def __getitem__(self, key):
-        if key == 'bar':
-            return Bar('bar', self, self.request)
-        raise KeyError
+    def __init__(self, name=None, parent=None, request=None):
+        super(Foo, self).__init__(name=name, parent=parent, request=request)
+        self.update({
+            'bar': Bar('bar', self, self.request),
+            'zar': Zar('zar', self, self.request),
+        })
 
-
+################################################################################
+# Bar childrens
 class Bar(BaseResource):
+    def __init__(self, name=None, parent=None, request=None):
+        super(Bar, self).__init__(name=name, parent=parent, request=request)
+        self.update({
+            'go': Go('go', self, self.request),
+        })
+
+class Go(BaseResource):
     pass
 
 
+################################################################################
+# Zar branch
+class Zar(BaseResource):
+    pass
+
+
+################################################################################
+# Root factory
 def root_factory(request):
     root = Root()
     root['foo'] = Foo(name='foo', parent=root, request=request)
