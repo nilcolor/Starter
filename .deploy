@@ -1,6 +1,8 @@
 REMOTE="dashrocket"
 REMOTE_PATH="/home/dev/env"
 REMOTE_USER="dev"
-# EXCLUDES=""
+EXCLUDES="
+ --exclude=Starter.sublime-project
+"
 # UPDATE_REMOTE=false
 # DELETE_EXCLUDED=true
