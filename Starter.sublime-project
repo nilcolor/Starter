@@ -9,7 +9,13 @@
     [
         {
             "name": "Deploy",
-            "cmd": "deploy"
+            "cmd": [
+                "deploy"
+            ],
+            "working_dir": "${project_path}",
+            "env": {
+                "PATH": "/usr/local/bin:$PATH"
+            }
         }
         // {
         //     "name": "Rsync to dashrocket",
