@@ -3,6 +3,9 @@ from __future__ import division, absolute_import
 
 from pyramid.config import Configurator
 from starter.resources import root_factory
+from starter.auth import FakeAuthorizationPolicy
+# from starter.auth import FakeAuthorizationPolicy
+from pyramid.authentication import AuthTktAuthenticationPolicy
 
 from pyramid.events import subscriber
 from pyramid.events import NewRequest, ContextFound
@@ -12,7 +15,16 @@ def main(global_config, **settings):
     """ This function returns a Pyramid WSGI application.
     """
 
-    config = Configurator(root_factory=root_factory, settings=settings)
+    authentication_policy = AuthTktAuthenticationPolicy('secretkey123456')
+    authorization_policy = FakeAuthorizationPolicy()
+
+    config = Configurator(
+        root_factory=root_factory,
+        settings=settings,
+        authentication_policy=authentication_policy,
+      authorization_policy=authorization_policy
+    )
+    config.set_default_permission('view')
     # To configure the slash-appending not found view in your application, change the application’s startup configuration, adding the following stanza
     # config.add_view(context='pyramid.exceptions.NotFound', view='pyramid.view.append_slash_notfound_view')
     # config.add_view('starter.views.my_view',
@@ -47,5 +59,6 @@ def csrf_validation_event(event):
     #     (csrf != unicode(request.session.get_csrf_token())):
     # # summary - you can check something and pass-through request or
     # # raise HTTP error here.
-    if request.cookies.get('sid', None) != '1234567890':
+
+    if False and request.cookies.get('sid', None) != '1234567890':
         raise HTTPForbidden
