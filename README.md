@@ -10,16 +10,22 @@ You can read it ofcourse, if you wish...
 What's here right now?
 ----------------------
 
-- Very simple resource tree (check resources.py).  
+- Very simple resource tree (check resources.py).
 - More than useless two view callables which responds to `GET:/foo/bar` and `POST:/foo/bar`
+- DB shim used to simulate DB work
+- Base security class. It allows everything but it's for now ;)
+- Experiments with resource/subresource scheme
 
 Thats all for now. Infant, yeah...
 
 What's next?
 ------------
 
-- Security based on resource tree
+- Security based on resource tree (resource access list/permissions)
 - some real DB works
+- Row-level security (view-based)
+
+
 
 
 [pyramid]: https://www.pylonsproject.org/
