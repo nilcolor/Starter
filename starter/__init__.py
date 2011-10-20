@@ -2,7 +2,7 @@
 from __future__ import division, absolute_import
 
 from pyramid.config import Configurator
-from starter.resources import root_factory
+from starter.resources import AppRoot
 from starter.auth import FakeAuthorizationPolicy
 # from starter.auth import FakeAuthorizationPolicy
 from pyramid.authentication import AuthTktAuthenticationPolicy
@@ -19,7 +19,7 @@ def main(global_config, **settings):
     authorization_policy = FakeAuthorizationPolicy()
 
     config = Configurator(
-        root_factory=root_factory,
+        root_factory=AppRoot,
         settings=settings,
         authentication_policy=authentication_policy,
       authorization_policy=authorization_policy
