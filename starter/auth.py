@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 # Auth stub module
 from pyramid.traversal import resource_path
+from zope.interface import implements
+from pyramid.interfaces import IAuthorizationPolicy
 from pyramid.security import *
 
 class FakeAuthenticationPolicy(object):
@@ -51,6 +53,8 @@ class FakeAuthenticationPolicy(object):
 
 class FakeAuthorizationPolicy(object):
     """ An object representing a Pyramid authorization policy. """
+    implements(IAuthorizationPolicy)
+
     def permits(self, context, principals, permission):
         """ Return ``True`` if any of the ``principals`` is allowed the
         ``permission`` in the current ``context``, else return ``False``
