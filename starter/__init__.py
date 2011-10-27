@@ -11,6 +11,9 @@ from pyramid.events import subscriber
 from pyramid.events import NewRequest, ContextFound
 from pyramid.httpexceptions import HTTPUnauthorized, HTTPForbidden
 
+# TODO: take a look at http://docs.pylonsproject.org/projects/pyramid/1.2/narr/hooks.html
+# lots of cool stuff to use here
+
 def main(global_config, **settings):
     """ This function returns a Pyramid WSGI application.
     """
@@ -22,7 +25,7 @@ def main(global_config, **settings):
         root_factory=AppRoot,
         settings=settings,
         authentication_policy=authentication_policy,
-      authorization_policy=authorization_policy
+        authorization_policy=authorization_policy
     )
     config.set_default_permission('view')
     # To configure the slash-appending not found view in your application, change the application’s startup configuration, adding the following stanza
@@ -47,6 +50,7 @@ def cleanup_callback(request):
 @subscriber(NewRequest)
 def add_cleanup_callback(event):
     event.request.add_finished_callback(cleanup_callback)
+    print "%s -> %s" % (event.request.method, event.request.url)
 
 # will be called when context is found (in resource tree)
 @subscriber(ContextFound)

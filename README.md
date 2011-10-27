@@ -30,3 +30,4 @@ What's next?
 
 [pyramid]: https://www.pylonsproject.org/
 [1]: https://docs.pylonsproject.org/projects/pyramid/1.0/narr/traversal.html
+[akhet]: http://pyramid.chromaticleaves.com/simpleauth/
