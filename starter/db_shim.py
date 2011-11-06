@@ -7,21 +7,25 @@ class DBShim:
                 "id": 1,
                 "name": "First",
                 "gender": "m",
+                "uid": "CNT0001",
             },
             {
                 "id": 2,
                 "name": "Second",
                 "gender": "m",
+                "uid": "CNT0002",
             },
             {
                 "id": 3,
                 "name": "Third",
                 "gender": "f",
+                "uid": "CNT0003",
             },
             {
                 "id": 4,
                 "name": "Fourth",
                 "gender": "m",
+                "uid": "CNT0004",
             },
         ]
         self.order = [
@@ -74,3 +78,10 @@ class Customer(object):
         self.id = data["id"]
         self.name = data["name"]
         self.gender = data["gender"]
+
+    def one(self, uid):
+        for x in DBShim().customer:
+            if x["uid"] == uid:
+                return x
+        return {}
+
