@@ -36,6 +36,10 @@ class BaseResource(object):
 class OrderCollectionResource(BaseResource):
     """docstring for OrderCollectionResource"""
 
+    @view_config(context=OrderCollection, request_method="HEAD")
+    def head(self):
+        raise HTTPNotImplemented
+
     @view_config(context=OrderCollection, request_method="GET")
     def get(self):
         """Return list of orders.
